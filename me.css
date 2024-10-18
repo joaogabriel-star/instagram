@@ -12,7 +12,7 @@ body {
     background-color: white;
     border: 1px solid #dbdbdb;
     width: 100%;
-    max-width: 400px;
+    max-width: 1900px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -99,7 +99,7 @@ body {
 
     .interação {
         padding: 8px;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
