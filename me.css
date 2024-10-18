@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px; 
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.localizacao {
+    font-size: 12px;
+    color: gray;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+}
+
+.descrição {
+    padding: 10px;
+}
+
+.post-description p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.interação {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dbdbdb;
+}
+
+.like, .comentario {
+    background-color: transparent;
+    border: none;
+    color: #0095f6;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.like-btn:hover, .comment-btn:hover {
+    color: #005c9b;
+}
+
+.likes, .post-data {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .header {
+        padding: 8px;
+    }
+
+    .interação {
+        padding: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .like, .comentario {
+        font-size: 14px;
+    }
+
+    .likes, .post-data {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0; 
+    }
+
+    .header {
+        padding: 5px;
+    }
+
+    .profile {
+        width: 35px;
+        height: 35px;
+    }
+
+    .post-description p {
+        font-size: 12px;
+    }
+
+    .like, .comentario {
+        font-size: 12px;
+    }
+
+    .likes, .post-data {
+        font-size: 9px;
+    }
+}
